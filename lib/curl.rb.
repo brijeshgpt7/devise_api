@@ -1,0 +1,30 @@
+Registration.
+
+Create:
+curl -H "Content-Type: application/json" -d '{"user":{"email":"admin@carmatec.com","password":"qazplm123","password_confirmation":"qazplm123","name":"admin","phone_number":"1234567890","role_id":1}}' -X POST http://localhost:3000/api/v1/registrations
+
+
+login:
+curl -H "Content-Type: application/json" -d '{"user":{"email":"gourav@carmatec.com","password":"qazplm123"}}' -X POST http://localhost:3000/api/v1/sessions/login
+
+
+
+login
+curl -v -H 'Content-Type: application/json' -H 'Accept: application/json' -X DELETE http://localhost:3000/api/v1/sessions/\?auth_token\=JRYodzXgrLsk157ioYHf
+
+
+
+
+Registration.
+
+Create:
+curl -H "Content-Type: application/json" -d '{"user":{"email":"admin@carmatec.com","password":"qazplm123","password_confirmation":"qazplm123","name":"admin","phone_number":"1234567890","role_id":1}}' -X POST http://localhost:3000/api/v1/registrations
+
+
+login:
+curl -H "Content-Type: application/json" -d '{"user":{"email":"gourav@carmatec.com","password":"qazplm123"}}' -X POST http://localhost:3000/api/v1/sessions/login
+
+
+
+logout
+curl -v -H 'Content-Type: application/json' -H 'Accept: application/json' -X DELETE http://localhost:3000/api/v1/sessions/\?auth_token\=JRYodzXgrLsk157ioYHf
